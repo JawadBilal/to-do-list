@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://images.pexels.com/photos/6985265/pexels-photo-6985265.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-6985265.jpg&fm=jpg');
+}
+
+
+.main{
+    width: 100%;
+    max-width: 540px;
+    background: transparent;
+    margin: 100px auto 20px;
+    padding: 30px 20px 70px;
+    border-radius: 20px;
+}
+.main h2{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    
+}
+.main img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+.row button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #007FFF;
+    color: white;
+    padding: 16px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.row button:hover{
+    background: #002D62;
+}
+
+.update{
+    display: none;
+}
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding: 10px 30px 0px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.input textarea{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+.update button{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.saveBtn{
+    background: #006400;
+}
+.saveBtn:hover{
+    background: #32CD32;
+}
+.cancelBtn{
+    background: #D2122E;
+}
+.cancelBtn:hover{
+    background: #F40009;
+}
+@media screen and (max-width:350px) {
+    .row button{
+        padding: 16px 20px;
+    }
+    .update button{
+        padding: 12px 16px;
+    }
+}
+@media screen and (max-width:330px) {
+    .row {
+        padding-left: 10px;
+        flex: initial;
+    }
+}
